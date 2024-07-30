@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css"> <!-- Normalize CSS for consistent styling across browsers -->
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Custom stylesheet -->
+    <title>Input Floating Label</title>
+</head>
+<body>
+    <!-- Main container to center content on the page -->
+    <div class="container">
+        <!-- Form container for login -->
+        <div class="login-form">
+            <!-- Form header with an image -->
+            <header class="form-header">
+                <img src="https://picsum.photos/600" alt="Header Image"> <!-- Random image as header -->
+            </header>
+            <!-- Main section of the form -->
+            <main class="form-main">
+                <h1>Login</h1> <!-- Form title -->
+                <!-- Login form -->
+                <form>
+                    <!-- Floating label input for username -->
+                    <div class="floating-label">
+                        <input type="text" id="username" placeholder="Username"> <!-- Input field for username -->
+                        <label for="username">Username</label> <!-- Label for username input -->
+                    </div>
+                    <!-- Floating label input for password -->
+                    <div class="floating-label">
+                        <input type="password" id="password" placeholder="Password"> <!-- Input field for password -->
+                        <label for="password">Password</label> <!-- Label for password input -->
+                    </div>
+                    <input type="submit" value="Login" class="submit-btn"> <!-- Submit button for form -->
+                </form>
+            </main>
+            <!-- Footer section -->
+            <footer class="form-footer">
+                Howsepjan | &copy; 2024
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

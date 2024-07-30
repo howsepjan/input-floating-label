@@ -1,0 +1,129 @@
+/* Container for centering content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Login form box styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 10px 13px -7px rgba(0, 0, 0, .1), 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    background-color: white;
+    overflow: hidden;
+    color: #000;
+}
+
+/* Header styling for the form */
+.form-header {
+    width: 100%;
+    height: 150px;
+}
+
+/* Image within the header */
+.form-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main content styling */
+.form-main {
+    padding: 10px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Floating label input container */
+.floating-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input field styling */
+.floating-label input {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+/* Input focus styling */
+.floating-label input:focus {
+    border-color: #007bff;
+}
+
+/* Label styling */
+.floating-label label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    padding: 0 0.5rem;
+    color: #666;
+    pointer-events: none;
+    transition: top 0.2s, font-size 0.2s, transform 0.2s, background-color 0.3s;
+}
+
+/* Placeholder styling */
+.floating-label input::placeholder {
+    color: transparent;
+}
+
+/* Placeholder focus styling */
+.floating-label input:focus::placeholder {
+    color: #ccc;
+}
+
+/* Label transition when input is focused or has value */
+.floating-label input:not(:placeholder-shown) + label,
+.floating-label input:focus + label {
+    top: 0;
+    transform: translateY(-50%);
+    background-color: #fff;
+    font-size: 0.75rem;
+    color: #007bff;
+}
+
+/* Submit button styling */
+.submit-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* Submit button hover effect */
+.submit-btn:hover {
+    background-color: white;
+    color: #007bff;
+    border-color: #007bff;
+    cursor: pointer;
+}
+
+/* Footer styling for the form */
+.form-footer {
+    display: flex;
+    font-size: 0.7rem;
+    padding: 0 10px 10px 10px;
+    flex-direction: row;
+    justify-content: center;
+    color: gray;
+}
