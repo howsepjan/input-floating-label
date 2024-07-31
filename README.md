@@ -8,6 +8,9 @@ This project demonstrates how to create floating labels for input fields using o
 - Compatible with modern browsers
 - Utilizes `normalize.css` for consistent styling
 
+## Demo
+For demo visit [GitHub Page Input Floating Label](https://howsepjan.github.io/input-floating-label/)
+
 ## Usage
 To use this code in your own project, follow these steps:
 
